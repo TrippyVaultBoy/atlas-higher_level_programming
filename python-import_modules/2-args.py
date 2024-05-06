@@ -2,12 +2,12 @@
 from sys import argv
 
 def print_args(argv):
-    if len(sys.argv) - 1 == 0:
+    if len(argv) - 1 == 0:
         print("0 arguments.")
-    elif len(sys.argv) - 1 == 1:
+    elif len(argv) - 1 == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format((sys.argv) - 1))
+        print("{} arguments:".format((argv) - 1))
 
     for i in range(1, len(argv)):
         print("{}: {}".format(i, argv[i]))
