@@ -7,7 +7,7 @@ def print_args(argv):
     elif len(argv) - 1 == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format((argv) - 1))
+        print("{} arguments:".format(len(argv) - 1))
 
     for i in range(1, len(argv)):
         print("{}: {}".format(i, argv[i]))
