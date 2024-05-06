@@ -5,7 +5,7 @@ from sys import argv
 def inf_add(argv):
     sum = 0
     for i in argv[1:]:
-        sum += int(argv)
+        sum += int(i)
     print(sum)
 
 
