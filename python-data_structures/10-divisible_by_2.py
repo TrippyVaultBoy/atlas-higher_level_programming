@@ -2,9 +2,9 @@
 
 def divisible_by_2(my_list=[]):
     truth_list = []
-    for i in range(len(my_list) - 1):
+    for i in range(len(my_list)):
         if my_list[i] % 2 == 0:
-            truth_list[i] = True
+            truth_list.append(True)
         else:
-            truth_list[i] = False
+            truth_list.append(False)
     return truth_list
