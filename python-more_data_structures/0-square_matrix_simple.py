@@ -3,8 +3,8 @@
 def square_matrix_simple(matrix=[]):
     squares = []
     for row in matrix:
-        row = []
+        squares_row = []
         for element in row:
-            row.append(element ** 2)
-        squares.append(row)
+            squares_row.append(element ** 2)
+        squares.append(squares_row)
     return squares
