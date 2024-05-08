@@ -15,6 +15,8 @@ def roman_to_int(roman_string):
 
     if roman_string is None:
         return integer
+    elif isinstance(roman_string, int):
+        return integer
     else:
         for char in roman_string:
             value = roman_dict[char]
