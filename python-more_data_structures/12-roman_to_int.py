@@ -5,10 +5,13 @@ def roman_to_int(roman_string):
     integer = 0
     prev_value = 0
 
-    for char in roman_string:
-        value = roman_dict[char]
-        if value > prev_value:
-            integer -= 2 * prev_value
-        integer += value
-        prev_value = value
-    return integer
+    if roman_string is None:
+        return integer
+    else:
+        for char in roman_string:
+            value = roman_dict[char]
+            if value > prev_value:
+                integer -= 2 * prev_value
+            integer += value
+            prev_value = value
+        return integer
