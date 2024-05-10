@@ -2,6 +2,7 @@
 
 """module contains an empty class definition"""
 
+
 class Square:
     """empty class"""
     pass
