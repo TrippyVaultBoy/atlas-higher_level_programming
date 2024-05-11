@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module includes the private instance attribute position"""
 
+
 class Square:
     """includes private instance attribute position"""
     def __init__(self, size=0, position=(0, 0)):
