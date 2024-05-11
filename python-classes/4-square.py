@@ -5,7 +5,7 @@
 class Square:
     """class contains a getter and setter method"""
     def __init__(self, size=0):
-    self.size = size
+        self.size = size
 
     @property
     def size(self):
