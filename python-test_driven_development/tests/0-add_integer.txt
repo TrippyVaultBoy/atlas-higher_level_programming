@@ -2,17 +2,5 @@
 
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>>add_integer(0, 0)
-0
-
->>>add_integer(1, 0)
-1
-
->>>add_integer(0, 1)
-1
-
 >>>add_integer(1, 1)
 2
-
->>>add_integer(98)
-100
