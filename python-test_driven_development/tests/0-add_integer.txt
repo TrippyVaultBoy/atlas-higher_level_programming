@@ -38,3 +38,11 @@ OverflowError: cannot convert float infinity to integer
 Traceback (most recent call last):
 ...
 ValueError: cannot convert float NaN to integer
+
+>>> add_integer(98)
+100
+
+>>>add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
