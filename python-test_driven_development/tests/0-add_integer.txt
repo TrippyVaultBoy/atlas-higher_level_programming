@@ -11,11 +11,8 @@
 >>> add_integer(1.1, 1.1)
 2
 >>> add_integer("1", 1)
-Traceback (most recent last call):
 TypeError: a must be an integer
 >>> add_integer(1, "1")
-Traceback (most recent last call):
 TypeError: b must be an integer
 >>> add_integer("1", "1")
-Traceback (most recent last call):
 TypeError: a must be an integer
