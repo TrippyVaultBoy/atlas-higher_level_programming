@@ -1,6 +1,13 @@
 #!/usr/bin/python3
+"""Includes Function to add two integers"""
+
 
 def add_integer(a, b=98):
+    """Returns: a + b
+    If floats are passed they are typecasted
+    before being added and returned. Raises
+    TypeError if a or b is not a int or float"""
+
     if (not isinstance(a, int)) and (not isinstance(a, float)):
         raise TypeError("a must be an integer")
     if (not isinstance(b, int)) and (not isinstance(b, float)):
