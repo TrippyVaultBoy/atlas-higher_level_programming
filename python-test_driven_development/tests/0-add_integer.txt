@@ -4,3 +4,13 @@
 
 >>> add_integer(1, 1)
 2
+>>> add_integer(1.1, 1)
+2
+>>> add_integer(1, 1.1)
+2
+>>> add_integer(1.1, 1.1)
+2
+>>> add_integer("1", 1)
+TypeError: a must be an integer
+>>> add_integer(1, "1")
+TypeError: b must be an integer
