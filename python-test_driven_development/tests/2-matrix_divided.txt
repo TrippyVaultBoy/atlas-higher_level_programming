@@ -11,7 +11,9 @@
 Traceback (most recent call last):
 TypeError: div must be a number
 
-
+>>> matrix_divided(valid_matrix, 0)
+Traceback (most recent call last):
+ZeroDivisionError: division by zero
 
 
 
