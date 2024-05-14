@@ -23,7 +23,6 @@ def matrix_divided(matrix, div):
     div, rounded to 2 decimal places
 
     Returns a new matrix"""
-
     if not matrix:
         raise TypeError("matrix must be a matrix"
                         " (list of lists) of integers/floats")
@@ -36,7 +35,8 @@ def matrix_divided(matrix, div):
 
     for row in matrix:
         for element in row:
-            if ((not isinstance(element, int)) and (not isinstance(element, float))):
+            if ((not isinstance(element, int))
+                and (not isinstance(element, float))):
                 raise TypeError("matrix must be a matrix"
                                 " (list of lists) of integers/floats")
 
