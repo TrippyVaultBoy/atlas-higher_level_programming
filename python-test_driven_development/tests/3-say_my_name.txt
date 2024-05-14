@@ -2,3 +2,7 @@
 
 >>> say_my_name("Walter", "White")
 My name is Walter White
+
+>>> say_my_name("Walter", 5)
+Traceback (most recent call last):
+TypeError: last_name must be a string
