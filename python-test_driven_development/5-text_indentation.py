@@ -12,11 +12,13 @@ def text_indentation(text):
 
     There should be no space at the beginning
     or at the end of each printed line"""
-
-    for char in text:
-        if ((char == '.') or (char == '?') or (char == ':')):
-            print(char, end='')
-            print()
-            print()
-        else:
-            print(char, end='')
+    lines = text.split('\n')
+    for line in lines:
+        line = line.strip()
+        for char in line:
+            if ((char == '.') or (char == '?') or (char == ':')):
+                print(char, end='')
+                print()
+                print()
+            else:
+                print(char, end='')
