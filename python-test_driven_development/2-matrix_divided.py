@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
     div must be a number (integer or float), otherwise raise
     a TypeError exception with the message div must be a number
 
-    div cant be equal to 0, otherwise raise a ZeroDivisionError 
+    div cant be equal to 0, otherwise raise a ZeroDivisionError
     exception with the message division by zero
 
     All elements of the matrix should be divided by
@@ -34,7 +34,7 @@ def matrix_divided(matrix, div):
 
     for row in matrix:
         for element in row:
-            if (( not isinstance(element, int)) and (not isinstance(element, float))):
+            if ((not isinstance(element, int)) and (not isinstance(element, float))):
                 raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
 
     for row in matrix:
@@ -55,5 +55,4 @@ def matrix_divided(matrix, div):
             divided_row.append(round(divided / div, 2))
         divided_matrix.append(divided_row)
 
-    return divided_matrix
-            
+    return divided_matrix  
