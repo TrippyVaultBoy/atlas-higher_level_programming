@@ -15,9 +15,10 @@ TypeError: div must be a number
 Traceback (most recent call last):
 ZeroDivisionError: division by zero
 
-
-
-
 >>> matrix_divided(not_nums, 2)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+>>> matrix_divided(diff_size, 2)
+Traceback (most recent call last):
+TypeError: matrix must have each row with the same size
