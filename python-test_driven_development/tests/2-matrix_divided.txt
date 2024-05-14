@@ -5,7 +5,7 @@
 >>> diff_size = [[4, 6, 1], [9, 5], [5]]
 
 >>> matrix_divided(valid_matrix, 2)
-[[2, 3, 4], [1, 4, 2], [2, 2, 3]]
+[[2.0, 3.0, 4.0], [1.0, 4.0, 2.0], [2.0, 2.0, 3.0]]
 
 >>> matrix_divided(not_nums, 2)
 Traceback (most recent call last):
