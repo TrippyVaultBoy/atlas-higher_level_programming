@@ -13,6 +13,9 @@ def text_indentation(text):
     There should be no space at the beginning
     or at the end of each printed line"""
 
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
     text = text.replace('\n', ' ')
     for i in ".:?":
         text = text.replace(i, i+"\n\n")
