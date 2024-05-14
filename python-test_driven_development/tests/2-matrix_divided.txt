@@ -1,9 +1,8 @@
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
->>> not_num_list = [[7, 5, "Python"], [3, "Error", 4]]
->>> diff_size = [[4, 6, 1], [9, 5]]
+>>> not_nums = [[7, 5, "Python"], [3, "Error", 4], ["Test", 6, 4]]
+>>> diff_size = [[4, 6, 1], [9, 5], [5]]
 
->>> matrix_divided(not_num_list, 2)
+>>> matrix_divided(not_nums, 2)
 Traceback (most recent call last):
-...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
