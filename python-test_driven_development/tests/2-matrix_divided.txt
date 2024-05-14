@@ -27,3 +27,7 @@ TypeError: Each row of the matrix must have the same size
 
 >>> matrix_divided(valid_matrix, float('inf'))
 [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+>>> matrix_divided(div)
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 1 required positional argument: 'matrix'
