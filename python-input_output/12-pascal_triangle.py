@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+"""Includes pascal_triangle function"""
 
 
 def pascal_triangle(n):
+    """Creates a pascals triangle to the nth row"""
     if n <= 0:
         return []
     
