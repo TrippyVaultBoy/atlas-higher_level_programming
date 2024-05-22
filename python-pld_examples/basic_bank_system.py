@@ -21,3 +21,15 @@ class CheckingAccount(Account):
     def __init__(self, account_number, balance, overdraft_limit):
         super().__init__(account_number, balance)
         self.__overdraft_limit = overdraft_limit
+
+class Customer:
+    def __init__(self, name, customer_id, accounts):
+        self.__name = name
+        self.__customer_id = customer_id
+        self.accounts = accounts
+
+    def open_account(account):
+
+    def close_account(account_number):
+
+    def get_account(account_number):
