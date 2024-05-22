@@ -2,26 +2,31 @@
 
 
 class Book:
-    def __init__(self, title, author, isbn, is_checked_out):
+    def __init__(self, title, author, isbn, is_checked_out=False):
         self.__title = title
         self.__author = author
         self.__isbn = isbn
         self.__is_checked_out = is_checked_out
 
     def check_out():
-        pass
+        self.__is_checked_out = True
+
     def return_book():
-        pass
+        self.__is_checked_out = False
 
 class Library:
     def __init__(self, books):
         self.__books = books
 
     def add_book(book):
-        pass
+        self.__books.append(book)
 
     def remove_book(isbn):
-        pass
+        for book in self.__books:
+            if book.__isbn == self.__isbn:
+                self.__books.remove(book)
+                return True
+        raise AttributeError("Book not found")
 
     def find_book_by_title(title):
         pass
