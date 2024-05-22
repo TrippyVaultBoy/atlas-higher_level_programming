@@ -16,9 +16,8 @@ class Student:
         if attrs is None:
             return self.__dict__
         else:
-            student_dict = {
-                "first_name": self.first_name,
-                "last_name": self.last_name,
-                "age": self.age
-            }
+            student_dict = {}
+            for attr in attrs:
+                if hasattr(self, attr):
+                    student_dict[attr] = getattr(self, attr)
             return student_dict
