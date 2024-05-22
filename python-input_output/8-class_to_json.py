@@ -7,7 +7,7 @@ def class_to_json(obj):
     simple data structure (list, dictionary, string,
     integer and boolean) for JSON serialization of an object"""
 
-    if hasattr(obj, '__dict__') == False:
+    if hasattr(obj, '__dict__') is False:
         raise ValueError("")
 
     json_dict = {}
