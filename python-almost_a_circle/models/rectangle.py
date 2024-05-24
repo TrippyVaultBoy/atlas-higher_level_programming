@@ -78,6 +78,11 @@ class Rectangle(Base):
                 print("#", end="")
             print()
 
+    def __str__(self):
+        """overwrites __str__ method"""
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
+            self.__id, self.__x, self.__y, self.__width, self.__height)
+
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
         if type(attr) is not int:
