@@ -66,7 +66,7 @@ class Rectangle(Base):
         self.attribute_validate(value, "y")
 
         self.__y = value
-    
+
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
         if type(attr) is not int:
