@@ -67,6 +67,10 @@ class Rectangle(Base):
 
         self.__y = value
 
+    def area(self):
+        """returns area if the rectangle instance"""
+        return self.__width * self.__height
+
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
         if type(attr) is not int:
