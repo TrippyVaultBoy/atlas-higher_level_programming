@@ -78,9 +78,9 @@ class Rectangle(Base):
                 print()
         for i in range(self.__height):
             for j in range(self.__width):
-                    if self.__y == j:
-                        for k in range(self.__x):
-                            print(" ", end="")
+                if self.__y == j:
+                    for k in range(self.__x):
+                        print(" ", end="")
                 print("#", end="")
             print()
 
