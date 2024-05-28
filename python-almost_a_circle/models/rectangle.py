@@ -89,6 +89,19 @@ class Rectangle(Base):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
 
+    def update(self, *args):
+        self.attribute_validate(args[1], "id")
+        self.attribute_validate(args[2], "width")
+        self.attribute_validate(args[3], "height")
+        self.attribute_validate(args[4], "x")
+        self.attribute_validate(args[5], "y")
+
+        self.__id = args[1]
+        self.__width = args[2]
+        self.__height = args[3]
+        self.__x = args[4]
+        self.__y = args[5]
+
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
         if type(attr) is not int:
