@@ -118,7 +118,8 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """returns a dictionary repr of rectangle"""
-        rec_dict = {"id": self.id, "width": self.width, "height": self.height, "x": self.x, "y": self.y}
+        rec_dict = {"id": self.id, "width": self.width,
+            "height": self.height, "x": self.x, "y": self.y}
         return rec_dict
 
     def attribute_validate(self, attr, var):
