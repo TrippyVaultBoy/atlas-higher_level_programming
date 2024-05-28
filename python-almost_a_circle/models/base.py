@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Includes class Base"""
+import json
 
 
 class Base:
@@ -20,4 +21,4 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         else:
-            return json.dump(list_dictionaries)
+            return json.dumps(list_dictionaries)
