@@ -89,7 +89,7 @@ class Rectangle(Base):
         return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """updates class instance attributes"""
         for i in range(len(args)):
             if i == 0:
@@ -102,6 +102,19 @@ class Rectangle(Base):
                 self.x = args[i]
             elif i == 4:
                 self.y = args[i]
+
+        if args is not None:
+            for key in kwargs:
+                if key == "id":
+                    self.id = kwargs[key]
+                elif key == "width":
+                    self.width = kwargs[key]
+                elif key == "height":
+                    self.height = kwargs[key]
+                elif key == "x":
+                    self.x = kwargs[key]
+                elif key == "y":
+                    self.y = kwargs[key]
 
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
