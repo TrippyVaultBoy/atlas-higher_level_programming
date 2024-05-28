@@ -27,3 +27,28 @@ class Square(Rectangle):
 
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """updates class instance attributes"""
+        for i in range(len(args)):
+            if i == 0:
+                self.id = args[i]
+            if i == 1:
+                self.height = args[i]
+                self.width = args[i]
+            if i == 2:
+                self.x = args[i]
+            if i == 3:
+                self.y = args[i]
+        
+        if args is not None:
+            for key in kwargs:
+                if key == "id":
+                    self.id = kwargs[key]
+                if key == "size":
+                    self.width = kwargs[key]
+                    self.height = kwargs[key]
+                if key == "x":
+                    self.x = kwargs[key]
+                if key == "y":
+                    self.y = kwargs[key]
