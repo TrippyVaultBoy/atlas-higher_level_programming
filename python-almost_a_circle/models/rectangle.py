@@ -93,15 +93,15 @@ class Rectangle(Base):
         """updates class instance attributes"""
         for i in range(len(args)):
             if i == 0:
-                self.__id = args[i]
+                self.id = args[i]
             elif i == 1:
-                self.__width = args[i]
+                self.width = args[i]
             elif i == 2:
-                self.__height = args[i]
+                self.height = args[i]
             elif i == 3:
-                self.__x = args[i]
+                self.x = args[i]
             elif i == 4:
-                self.__y = args[i]
+                self.y = args[i]
 
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
