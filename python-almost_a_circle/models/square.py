@@ -18,11 +18,12 @@ class Square(Rectangle):
     @property
     def size(self):
         """size getter"""
-        return self.size
+        return self.width
 
     @size.setter
     def size(self, value):
         """size setter"""
         self.attribute_validate(value, "width")
 
-        self.size = size
+        self.width = value
+        self.height = value
