@@ -91,11 +91,17 @@ class Rectangle(Base):
 
     def update(self, *args):
         """updates class instance attributes"""
-        attributes = ["id", "width", "height", "x", "y"]
-        for i in enumerate(args):
-            self.attribute_validate(args[i], attributes[i])
-            setattr(Rectangle, attributes[i], args[i])
-            
+        for i in range(len(args)):
+            if i == 0:
+                self.__id = args[i]
+            elif i == 1:
+                self.__width = args[i]
+            elif i == 2:
+                self.__height = args[i]
+            elif i == 3:
+                self.__x = args[i]
+            elif i == 4:
+                self.__y = args[i]
 
     def attribute_validate(self, attr, var):
         """validates attribute type and value"""
