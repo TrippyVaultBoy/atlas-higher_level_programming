@@ -40,7 +40,7 @@ class Square(Rectangle):
                 self.x = args[i]
             if i == 3:
                 self.y = args[i]
-        
+
         if args is not None:
             for key in kwargs:
                 if key == "id":
