@@ -94,6 +94,7 @@ class Rectangle(Base):
         attributes = ["id", "width", "height", "x", "y"]
         for i in enumerate(args):
             self.attribute_validate(args[i], attributes[i])
+            setattr(Rectangle, attributes[i], args[i])
             
 
     def attribute_validate(self, attr, var):
