@@ -76,9 +76,13 @@ class Rectangle(Base):
         if self.__y > 0:
             for i in range(self.__y):
                 print()
+            self.__y = 0
         for i in range(self.__height):
-            for j in range(self.__height):
-                print(" " * self.__x + "#" * self.__width)
+            for j in range(self.__width):
+                if self.__y == j:
+                    print(" " * self.__x, end="")
+                print("#", end="")
+            print()
 
     def __str__(self):
         """overwrites __str__ method"""
