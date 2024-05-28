@@ -10,3 +10,7 @@ class Square(Rectangle):
 
         self.__width = size
         self.__height = size
+
+    def __str__(self):
+        return "[{:d}] ({:d}) {:d}/{:d} - {:d}".format(
+            type(self).__name__, self.id, self.x, self.y, self.width)
