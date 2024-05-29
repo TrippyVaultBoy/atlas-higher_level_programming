@@ -43,5 +43,5 @@ class Base:
 
         if json_string is not None and json_string != "":
             json_to_list = json.loads(json_string)
-        
+
         return json_to_list
