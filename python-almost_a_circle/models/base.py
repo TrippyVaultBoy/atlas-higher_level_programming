@@ -46,6 +46,7 @@ class Base:
 
         return json_to_list
 
+    @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
         if cls.__name__ == "Rectangle":
