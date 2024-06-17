@@ -1,0 +1,22 @@
+For those stuck installing mysql on the sandboxes, I think this works:
+
+install sudo:
+    apt install sudo
+
+update apt:
+    sudo apt update
+
+Install mysql:
+    sudo apt install mysql-server
+
+There are errors. Ignore them.
+
+start the service:
+    sudo service mysql start
+
+There are errors. Ignore them.
+
+launch mysql:
+    sudo mysql
+
+You're going to see a bunch of errors, but at the end of the day "show databases" works.
