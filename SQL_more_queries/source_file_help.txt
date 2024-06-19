@@ -1,0 +1,24 @@
+if anyone has any problem downloading the source files for 10+ on proj 2 here are the steps:
+ 1. Log into mysql
+    
+    mysql -u root -p
+ 
+ 2. Create the database hbtn_0d_tvshows
+    
+    CREATE database hbtn_0d_tvshows
+ 
+ 3. Exit mysql, and run the following command (replace URL with the project dump file URL)
+    
+    curl -O <url>
+ 
+ 4. Now just plug the downloaded dump file into the database you just made with this command (replace <dumpfile.sql> with the actual file):
+    
+    mysql -u root -p hbtn_0d_tvshows < <dumpfile.sql>
+ 
+ 5. Now check your work! Re-enter mysql and run this command:
+    
+    SHOW databases; //your new database should be in this list
+    USE hbtn_0d_tvshows; 
+    SHOW tables; //you should see three tables: tvshows, tvshow_genres and tv_genres
+ 
+ 6. Play with em!
