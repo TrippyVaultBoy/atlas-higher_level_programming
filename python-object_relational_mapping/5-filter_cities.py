@@ -12,8 +12,8 @@ def list_cities_by_state(
     mysql_username,
     mysql_password,
     database_name,
-    state_name
-    ):
+    state_name):
+
     db = MySQLdb.connect(
         host="localhost",
         port=3306,
