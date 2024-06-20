@@ -8,8 +8,7 @@ import sys
 
 
 def list_states(mysql_username, mysql_password, database_name):
-
-    db=MySQLdb.connect(
+    db = MySQLdb.connect(
         host="localhost",
         port=3306,
         user=mysql_username,
