@@ -28,8 +28,8 @@ def list_states(mysql_username, mysql_password, database_name):
 
     states = cursor.fetchall()
 
-    for state in states:
-        print(state)
+    for city in cities:
+        print(city)
 
     cursor.close()
     db.close()
@@ -41,4 +41,4 @@ if __name__ == "__main__":
     database_name = sys.argv[3]
     state_name = sys.argv[4]
 
-    list_states(mysql_username, mysql_password, database_name)
+    list_states(mysql_username, mysql_password, database_name, state_name)
