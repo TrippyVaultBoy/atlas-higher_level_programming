@@ -31,8 +31,8 @@ def list_cities_by_state(mysql_username, mysql_password, database_name, state_na
 
     cities = cursor.fetchall()
 
-    for city in cities:
-        print(city)
+    city_names = [city[0] for city in cities]
+    print(", ".join(city_names))
 
     cursor.close()
     db.close()
