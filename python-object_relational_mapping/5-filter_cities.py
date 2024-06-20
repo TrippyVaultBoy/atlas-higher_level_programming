@@ -18,26 +18,6 @@ def list_states(mysql_username, mysql_password, database_name):
 
     cursor = db.cursor()
 
-    query = #!/usr/bin/python3
-"""
-lists all states from the database hbtn_0e_0_usa
-"""
-
-import MySQLdb
-import sys
-
-
-def list_states(mysql_username, mysql_password, database_name):
-    db = MySQLdb.connect(
-        host="localhost",
-        port=3306,
-        user=mysql_username,
-        password=mysql_password,
-        db=database_name
-    )
-
-    cursor = db.cursor()
-
     query = """
         SELECT GROUP_CONCAT(cities.name ORDER BY cities.id ASC SEPARATOR ', ')
         FROM cities
