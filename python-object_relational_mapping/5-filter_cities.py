@@ -29,8 +29,6 @@ def list_cities_by_state(mysql_username, mysql_password, database_name, state_na
 
     cursor.execute(query, (state_name,))
 
-    cities = cursor.fetchall()
-
     result = cursor.fetchone()[0]
     if result is not None:
         print(result)
