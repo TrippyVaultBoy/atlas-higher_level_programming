@@ -19,8 +19,8 @@ def list_states(mysql_username, mysql_password, database_name):
     cursor = db.cursor()
 
     cursor.execute(
-        """SELECT id, name FROM states WHERE
-        name = '{}' ORDER BY id ASC""".format(state_name)
+        "SELECT * FROM states WHERE name LIKE BINARY '{}'"
+        .format(state_name)
         )
 
     states = cursor.fetchall()
