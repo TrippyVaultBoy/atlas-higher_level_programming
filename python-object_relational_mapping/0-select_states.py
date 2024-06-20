@@ -28,6 +28,7 @@ def list_states(mysql_username, mysql_password, database_name):
     cursor.close()
     db.close()
 
+
 if __name__ == "__main__":
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
