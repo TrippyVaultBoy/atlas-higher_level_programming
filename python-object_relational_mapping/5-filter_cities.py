@@ -20,11 +20,10 @@ def list_cities_by_state(mysql_username, mysql_password, database_name, state_na
     cursor = db.cursor()
 
     query = """
-    SELECT cities.id, cities.name 
-    FROM cities 
-    JOIN states ON cities.state_id = states.id 
-    WHERE states.name = %s 
-    ORDER BY cities.id ASC
+    SELECT GROUP_CONCAT(cities.name ORDER BY cities.id ASC SEPARATOR ', ')
+    FROM cities
+    INNER JOIN states ON cities.state_id = states.id
+    WHERE states.name = %s
     """
 
     cursor.execute(query, (state_name,))
