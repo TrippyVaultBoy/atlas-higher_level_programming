@@ -23,7 +23,7 @@ def list_states(mysql_username, mysql_password, database_name):
         INNER JOIN states ON states.id = cities.state_id
         ORDER BY cities.id ASC
         """
-    cursor.execute(query, (state_name,))
+    cursor.execute(query)
 
     states = cursor.fetchall()
 
