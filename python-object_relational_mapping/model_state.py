@@ -19,4 +19,4 @@ class State(Base):
         autoincrement=True
     )
 
-    name = Column(String(i28), nullable=False)
+    name = Column(String(128), nullable=False)
