@@ -19,7 +19,7 @@ def list_states(mysql_username, mysql_password, database_name):
     cursor = db.cursor()
 
     cursor.execute(
-        """SELECT id, name FROM states WHERE 
+        """SELECT id, name FROM states WHERE
         name LIKE BINARY 'N%' ORDER BY id ASC"""
         )
 
