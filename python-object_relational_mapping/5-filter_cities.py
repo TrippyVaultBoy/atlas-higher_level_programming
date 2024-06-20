@@ -8,11 +8,11 @@ import sys
 import MySQLdb
 
 
-def list_cities_by_state(
-    mysql_username,
-    mysql_password,
-    database_name,
-    state_name):
+if __name__ == "__main__":
+    mysql_username = sys.argv[1]
+    mysql_password = sys.argv[2]
+    database_name = sys.argv[3]
+    state_name = sys.argv[4]
 
     db = MySQLdb.connect(
         host="localhost",
@@ -41,17 +41,3 @@ def list_cities_by_state(
 
     cursor.close()
     db.close()
-
-
-if __name__ == "__main__":
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    database_name = sys.argv[3]
-    state_name = sys.argv[4]
-
-    list_cities_by_state(
-        mysql_username,
-        mysql_password,
-        database_name,
-        state_name
-        )
