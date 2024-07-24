@@ -8,7 +8,7 @@ if (isNaN(size)) {
   for (let i = 0; i < size; i++) {
     let row_string = '';
     for (let j = 0; j < size; j++) {
-      row += 'X';
+      row_string += 'X';
     }
     console.log(row_string);
   }
