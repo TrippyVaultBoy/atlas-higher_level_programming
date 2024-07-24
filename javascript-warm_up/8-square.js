@@ -6,10 +6,10 @@ if (isNaN(size)) {
   console.log('Missing size');
 } else {
   for (let i = 0; i < size; i++) {
-    let row_string = '';
+    let row_String = '';
     for (let j = 0; j < size; j++) {
-      row_string += 'X';
+      row_String += 'X';
     }
-    console.log(row_string);
+    console.log(row_String);
   }
 }
