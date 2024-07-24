@@ -13,7 +13,7 @@ if (args.length <= 1) {
       largest = args[i];
     }
   }
-  for (let j = 0; i < args.length; i++) {
+  for (let j = 0; j < args.length; j++) {
     current = args[j];
     if (current > secondLargest && current < largest) {
       secondLargest = current;
