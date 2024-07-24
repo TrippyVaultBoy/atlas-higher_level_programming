@@ -3,7 +3,7 @@
 const OldSquare = require('./5-square');
 
 module.exports = class Square extends OldSquare {
-  charPrint(c) {
+  charPrint (c) {
     if (c === undefined) {
       c = 'X';
     }
@@ -15,4 +15,4 @@ module.exports = class Square extends OldSquare {
       console.log(rowString);
     }
   }
-}
+};
