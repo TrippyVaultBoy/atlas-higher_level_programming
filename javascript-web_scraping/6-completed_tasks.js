@@ -2,9 +2,9 @@
 const request = require('request');
 const url = process.argv[2];
 
-request.get(url, (err, response, content) => {
+request(url, (err, response, content) => {
   if (err) {
-    console.error(err);
+    console.error('Error:', err);
     return;
   }
   if (response.statusCode !== 200) {
@@ -12,16 +12,16 @@ request.get(url, (err, response, content) => {
     return;
   }
   const todos = JSON.parse(content);
-  const completed = {};
+  const tasksCompleted = {};
 
-  todos.forEach(todo => {
+  todos.forEach((todo) => {
     if (todo.completed) {
-      if (completed[todo.userID]) {
-        completed[todo.userID]++;
+      if (tasksCompleted[todo.userId]) {
+        tasksCompleted[todo.userId]++;
       } else {
-        completed[todo.userID] = 1;
+        tasksCompleted[todo.userId] = 1;
       }
     }
   });
-  console.log(completed);
+  console.log(tasksCompleted);
 });
