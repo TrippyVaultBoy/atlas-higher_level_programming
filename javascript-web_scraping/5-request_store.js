@@ -17,8 +17,6 @@ request.get(url, (err, response, content) => {
     if (err) {
       console.error('Error writing file:', err);
       return;
-    } else {
-      console.log(filepath);
     }
   });
 });
